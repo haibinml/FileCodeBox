@@ -19,7 +19,7 @@ class FileCodes(models.Model):
     suffix = fields.CharField(max_length=255, default="")
     uuid_file_name = fields.CharField(max_length=255, null=True)
     file_path = fields.CharField(max_length=255, null=True)
-    size = fields.IntField(default=0)
+    size = fields.BigIntField(default=0)
     text = fields.TextField(null=True)
     expired_at = fields.DatetimeField(null=True)
     expired_count = fields.IntField(default=0)
